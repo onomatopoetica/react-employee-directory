@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from "react-dom";
-import App from "./App";
+
 
 function Jumbotron() {
     return (
         <div className="jumbotron jumbotron-fluid">
             <div className="container-fluid text-center">
-                <h1 className="EMPLOYEE DIRECTORY"></h1>
-                <p className="Search to find an employee"></p>
+                {/* eslint-disable-next-line */}
+                <h1 className="employeedirectory">EMPLOYEE DIRECTORY</h1>
+                <p className="search">Search for an employee by name</p>
             </div>
         </div>
     )

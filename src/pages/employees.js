@@ -43,11 +43,7 @@ class Employees extends Component {
 
     handleSearch = (e) => {
         let value = e.target.value.toLowerCase();
-        this.setState({
-            search: value
-        },
-            this.searchBar
-        )
+        this.setState({ ...this.state, search: value });
     }
 
     searchBar = () => {

@@ -3,7 +3,7 @@ img {
 }
 
 .jumbotron {
-    background-image: url(./shape.jpeg);
+    background-image: url(./blue.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,7 +14,7 @@ img {
 }
 
 button, .form-control, img {
-    box-shadow: 2px 2px 2px rgb(33, 33, 33);
+    box-shadow: 5px 5px 5px rgb(33, 33, 33);
 }
 
 th {
@@ -22,7 +22,7 @@ th {
 }
 
 td {
-    padding-left: 16px;
+    padding-left: 15px;
 }
 
 img {

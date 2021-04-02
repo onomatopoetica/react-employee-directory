@@ -5,9 +5,11 @@ import table from './table.css'
 function Table(props) {
 
     const employees = props.employees
-    const index = props.index
+
     // How to add a key prop?
     // Pass the "key" to the TableRow?
+
+    const index = props.index
 
     // console.log(employees)
 

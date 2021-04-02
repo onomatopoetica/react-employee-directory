@@ -3,6 +3,9 @@ import Jumbotron from '../components/jumbotron';
 import Table from '../components/table.js';
 import API from '../utils/API.js';
 
+// The state object stores property values belonging to the component
+// When the state object changes, the component re-renders
+
 class Employees extends Component {
     state = {
         employees: [],
@@ -64,13 +67,14 @@ class Employees extends Component {
     }
 
     // Rendering the page with jumbotron and employees table
+    // Referring to the state object in the render() method
 
     render() {
         const { searchArray } = this.state
         return (
             <div>
                 <Jumbotron />
-                <div className='input-group mb-3 row justify-content-center'>
+                <div className='row input-group mb-3 justify-content-center'>
                     <div className='col-sm-4'>
                         <input
                             className='form-control'
@@ -80,7 +84,10 @@ class Employees extends Component {
                             onChange={this.handleSearch}
                         />
                     </div>
-                    <button className='btn btn-dark' onClick={this.sortByName}>SORT BY NAME</button>
+
+                    {/* On button click, employee data will sort by name */}
+
+                    <button className='btn btn-dark' onClick={this.sortByName}>Search</button>
                 </div>
                 <div className='container'>
                     <Table employees={searchArray} />

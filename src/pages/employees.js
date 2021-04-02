@@ -37,7 +37,8 @@ class Employees extends Component {
         }
         this.setState({
             searchArray: sortedArray,
-            sorted: !sorted
+            sorted: !sorted,
+            employees: employees
         })
     }
 

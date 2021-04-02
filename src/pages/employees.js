@@ -11,6 +11,8 @@ class Employees extends Component {
         sorted: false,
     }
 
+    // Getting random employee data from randomuser.me through axios 
+
     componentDidMount() {
         API.getRandomEmployees().then(response => {
             this.setState({
@@ -19,6 +21,8 @@ class Employees extends Component {
             })
         })
     }
+
+    // Sorting employees by name with search input else without search criteria
 
     sortByName = () => {
         let { employees, sorted, searchArray } = this.state
@@ -42,6 +46,7 @@ class Employees extends Component {
             this.searchBar
         )
     }
+
     searchBar = () => {
         let { employees } = this.state
         let newArray = [];
@@ -57,6 +62,9 @@ class Employees extends Component {
             searchArray: newArray
         })
     }
+
+    // Rendering the page with jumbotron and employees table
+
     render() {
         const { searchArray } = this.state
         return (

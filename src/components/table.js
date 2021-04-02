@@ -25,6 +25,10 @@ function Table(props) {
                 </thead>
 
                 <tbody>
+
+                    {/* creates a new array with the results of calling a function for every array element */}
+                    {/* calls the function once for each element in the array, in order */}
+
                     {employees.map((employees) => (
                         <tr>
                             <td><img src={employees.picture.medium} alt='employee'></img></td>

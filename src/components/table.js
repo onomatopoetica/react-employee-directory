@@ -1,15 +1,12 @@
-import React from 'react'
-import table from './table.css'
+import React from 'react';
+import table from './table.css';
 
 
 function Table(props) {
 
     const employees = props.employees
 
-    // How to add a key prop?
-    // Pass the "key" to the TableRow?
-
-    const index = props.index
+    // const index = props.index
 
     // console.log(employees)
 
@@ -17,7 +14,8 @@ function Table(props) {
         <>
             <table className='Table'>
                 <thead>
-                    <tr key={index}>
+
+                    <tr>
                         <th scope='col'>Photo</th>
                         <th scope='col'>First</th>
                         <th scope='col'>Last</th>
@@ -31,8 +29,8 @@ function Table(props) {
                     {/* creates a new array with the results of calling a function for every array element */}
                     {/* calls the function once for each element in the array, in order */}
 
-                    {employees.map((employees) => (
-                        <tr>
+                    {employees.map((employees, i) => (
+                        <tr key={i}>
                             <td><img src={employees.picture.medium} alt='employee'></img></td>
                             <td>{employees.name.first}</td>
                             <td>{employees.name.last}</td>

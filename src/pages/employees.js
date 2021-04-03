@@ -47,7 +47,7 @@ class Employees extends Component {
         this.setState({
             search: value
         },
-            this.searchBar
+            // this.searchBar
         )
     }
 
@@ -71,7 +71,7 @@ class Employees extends Component {
     // Referring to the state object in the render() method
 
     render() {
-        const { searchArray } = this.state
+        const { employees, search } = this.state
         return (
             <div>
                 <Jumbotron />
@@ -88,10 +88,15 @@ class Employees extends Component {
 
                     {/* On button click, employee data will sort by name */}
 
-                    <button className='btn btn-dark' onClick={this.sortByName}>Search</button>
+                    <button className='btn btn-dark' onClick={this.sortByName}>Sort</button>
                 </div>
                 <div className='container'>
-                    <Table employees={searchArray} />
+                    <Table employees={employees.filter(item => {
+                        if (!search) return true;
+                        if (item.name.first.toLowerCase().indexOf(search) !== -1) return true;
+                        if (item.name.last.toLowerCase().indexOf(search) !== -1) return true;
+                        return false;
+                    })} />
                 </div>
             </div>
         )

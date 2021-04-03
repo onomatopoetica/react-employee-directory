@@ -34,7 +34,7 @@ A user can:
 
 ## Demo
 
-#### The following is an overview of the application in operation and rendering of the budget tracker app. 
+#### The following is an overview of the application in operation and rendering of the employee directory app. 
     
 <img src="./src/components/employeesort.gif" alt="app video" width="900" height="auto"> <br>
 

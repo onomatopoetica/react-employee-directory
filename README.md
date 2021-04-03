@@ -36,11 +36,11 @@ A user can:
 
 #### The following is an overview of the application in operation and rendering of the budget tracker app. 
     
-<img src="./src/components/placeholder.gif" alt="app video" width="900" height="auto"> <br>
+<img src="./src/components/employeesort.gif" alt="app video" width="900" height="auto"> <br>
 
 #### The following is a screenshot of the application and overview of its functionality: <br>
 
-<img src="./src/components/sort.png" alt="app screenshot" width="900" height="auto"> 
+<img src="./src/components/demo.png" alt="app screenshot" width="900" height="auto"> 
 
 ## Getting Started
     

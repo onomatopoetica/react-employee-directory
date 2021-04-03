@@ -16,8 +16,8 @@ img {
     box-shadow: 9px 9px 9px rgb(150, 150, 150);
 }
 
-button, .form-control, img {
-    box-shadow: 6px 6px 6px rgb(150, 150, 150);
+button, img {
+    box-shadow: 3px 3px 3px rgb(150, 150, 150);
 }
 
 th {

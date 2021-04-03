@@ -3,8 +3,8 @@ import Jumbotron from '../components/jumbotron';
 import Table from '../components/table.js';
 import API from '../utils/API.js';
 
-// The state object stores property values belonging to the component
-// When the state object changes, the component re-renders
+// The state object stores property values belonging to the component
+// When the state object changes, the component re-renders
 
 class Employees extends Component {
     state = {
@@ -46,9 +46,7 @@ class Employees extends Component {
         let value = e.target.value.toLowerCase();
         this.setState({
             search: value
-        },
-            // this.searchBar
-        )
+        })
     }
 
     searchBar = () => {
@@ -88,9 +86,9 @@ class Employees extends Component {
 
                     {/* On button click, employee data will sort by name */}
 
-                    <button className='btn btn-dark' onClick={this.sortByName}>Sort</button>
+                    <button className='btn btn-warning' onClick={this.sortByName}>Sort</button>
                 </div>
-                <div className='container'>
+                <div className='container justify-content-center'>
                     <Table employees={employees.filter(item => {
                         if (!search) return true;
                         if (item.name.first.toLowerCase().indexOf(search) !== -1) return true;

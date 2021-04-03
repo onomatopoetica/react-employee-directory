@@ -6,8 +6,8 @@ function Jumbotron() {
         <div className="jumbotron jumbotron-fluid">
             <div className="container-fluid text-center">
                 {/* eslint-disable-next-line */}
-                <h1 className="employeedirectory">EMPLOYEE DIRECTORY</h1>
-                <p className="search">Search for an employee by name</p>
+                <h1 className="employeedirectory"></h1>
+                <p className="search"></p>
             </div>
         </div>
     )

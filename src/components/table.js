@@ -6,10 +6,6 @@ function Table(props) {
 
     const employees = props.employees
 
-    // const index = props.index
-
-    // console.log(employees)
-
     return (
         <>
             <table className='Table'>

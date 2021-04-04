@@ -21,15 +21,15 @@ An employee directory application using React to create UI components, manage co
 
 ## About The Project
 
-The scope of this project was to render a table of (random) employees generated from the [Random User API](https://randomuser.me/). When a user loads the page, a table of employees is rendered.
+The scope of this project was to create a resource for employees and managers to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name. This app utilizes  [Random User API](https://randomuser.me/) to demonstrate its functionality. 
 
-A user can:
+When the app loads, a user can:
 
-* Sort the table by pressing the sort button to scroll through employees, or
+* Sort the rendered employee table by pressing the sort button to scroll through employees, or
 
 * Filter employees by entering an employee name,
 
-* Or, simply begin entering letters in an employee's name and result will begin to render in the table.
+* Or, simply begin entering letters in an employee's name and results will begin to render in the table as the user types.
 
 
 ## Demo
